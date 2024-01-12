@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <div class="score">
+      <div>
+        <span id="your-score">0</span><span> - </span
+        ><span id="comp-score">0</span>
+      </div>
+    </div>
+
+    <div class="both-containers">
+      <div class="container" id="your-container">
+        <h1>You</h1>
+        <img id="your-image" src="./assets/paper-hand.png" alt="" />
+        <div class="options" id="your-options">
+          <button id="rock">
+            <img src="./assets/rock-logo.png" alt="rock-logo" />
+          </button>
+          <button id="paper">
+            <img src="./assets/paper-logo.png" alt="paper-logo" />
+          </button>
+          <button id="scissors">
+            <img src="./assets/scissors-logo.png" alt="scissor-logo" />
+          </button>
+        </div>
+      </div>
+
+      <div id="vs">
+        <img src="./assets/vs.png" alt="vs-image" />
+      </div>
+
+      <div class="container" id="comp-container">
+        <h1>Comp</h1>
+        <img id="comp-image" src="./assets/rock-hand.png" alt="" />
+      </div>
+    </div>
+
+    <div class="result" id="result-modal">
+      <h1 id="result-message">You Won the Game</h1>
+      <div id="play-button">
+        <button>Play Again</button>
+      </div>
+    </div>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
